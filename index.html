@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jenny B. Talbert | Probate & Estate Law Attorney | Oregon</title>
+  <style>
+    /* Global Styles */
+    :root {
+      --primary-color: #2c3e50;
+      --secondary-color: #3498db;
+      --accent-color: #e67e22;
+      --light-color: #ecf0f1;
+      --dark-color: #2c3e50;
+      --font-main: 'Georgia', serif;
+      --font-headers: 'Libre Baskerville', 'Georgia', serif;
+      --font-sans: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: var(--font-main);
+      line-height: 1.6;
+      color: #333;
+      background-color: #fff;
+    }
+    
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    h1, h2, h3, h4, h5 {
+      font-family: var(--font-headers);
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+      font-weight: 600;
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+      line-height: 1.2;
+    }
+    
+    h2 {
+      font-size: 2rem;
+      line-height: 1.3;
+    }
+    
+    h3 {
+      font-size: 1.5rem;
+      line-height: 1.4;
+    }
+    
+    p {
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+    }
+    
+    a {
+      color: var(--secondary-color);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    a:hover {
+      color: var(--accent-color);
+    }
+    
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: var(--secondary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      font-family: var(--font-sans);
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .btn:hover {
+      background-color: var(--accent-color);
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .btn-outlined {
+      background-color: transparent;
+      border: 2px solid var(--secondary-color);
+      color: var(--secondary-color);
+    }
+    
+    .btn-outlined:hover {
+      background-color: var(--secondary-color);
+      color: white;
+    }
+    
+    .text-center {
+      text-align: center;
+    }
+    
+    /* Header Styles */
+    header {
+      background-color: white;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+    
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    
+    .logo-text {
+      font-family: var(--font-headers);
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--primary-color);
+    }
+    
+    .logo-text span {
+      color: var(--secondary-color);
+    }
+    
+    .nav-links {
+      display: flex;
+      list-style: none;
+    }
+    
+    .nav-links li {
+      margin-left: 30px;
+    }
+    
+    .nav-links a {
+      color: var(--dark-color);
+      font-family: var(--font-sans);
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+    
+    .nav-links a:hover {
+      color: var(--secondary-color);
+    }
+    
+    .mobile-nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: var(--primary-color);
+      cursor: pointer;
+    }
+    
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('/api/placeholder/1200/600') center/cover no-repeat;
+      color: white;
+      padding: 160px 0 100px;
+      text-align: center;
+    }
+    
+    .hero h1 {
+      color: white;
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    }
+    
+    .hero p {
+      font-size: 1.3rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      line-height: 1.6;
+    }
+    
+    /* About Section */
+    .about {
+      padding: 100px 0;
+      background-color: var(--light-color);
+    }
+    
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+    
+    .about-image {
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    
+    .about-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    .about-content h2 {
+      position: relative;
+      padding-bottom: 15px;
+      margin-bottom: 25px;
+    }
+    
+    .about-content h2:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background-color: var(--secondary-color);
+    }
+    
+    /* Services Section */
+    .services {
+      padding: 100px 0;
+      background-color: white;
+    }
+    
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    
+    .section-title h2 {
+      position: relative;
+      padding-bottom: 15px;
+      display: inline-block;
+    }
+    
+    .section-title h2:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background-color: var(--secondary-color);
+    }
+    
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+    
+    .service-card {
+      background-color: white;
+      border-radius: 8px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    .service-icon {
+      font-size: 3rem;
+      color: var(--secondary-color);
+      margin-bottom: 20px;
+    }
+    
+    .service-title {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: var(--primary-color);
+    }
+    
+    /* Process Section */
+    .process {
+      padding: 100px 0;
+      background-color: var(--light-color);
+    }
+    
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 50px;
+    }
+    
+    .process-step {
+      text-align: center;
+      position: relative;
+    }
+    
+    .process-step:not(:last-child):after {
+      content: '';
+      position: absolute;
+      top: 30px;
+      right: -10px;
+      width: 20px;
+      height: 2px;
+      background-color: var(--secondary-color);
+    }
+    
+    .step-number {
+      width: 60px;
+      height: 60px;
+      background-color: var(--secondary-color);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 0 auto 20px;
+    }
+    
+    /* Testimonials Section */
+    .testimonials {
+      padding: 100px 0;
+      background-color: white;
+    }
+    
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+    
+    .testimonial-card {
+      background-color: var(--light-color);
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+    
+    .testimonial-text {
+      font-style: italic;
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+    
+    .testimonial-author {
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+    
+    .testimonial-author span {
+      font-weight: normal;
+      color: #666;
+      font-size: 0.9rem;
+    }
+    
+    /* FAQ Section */
+    .faq {
+      padding: 100px 0;
+      background-color: var(--light-color);
+    }
+    
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .faq-item {
+      margin-bottom: 20px;
+      border-radius: 8px;
+      background-color: white;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+    }
+    
+    .faq-question {
+      padding: 20px;
+      background-color: white;
+      color: var(--primary-color);
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .faq-answer {
+      padding: 20px;
+      border-top: 1px solid #eee;
+      display: none;
+    }
+    
+    .faq-question:after {
+      content: '+';
+      font-size: 1.2rem;
+    }
+    
+    .faq-item.active .faq-question:after {
+      content: '-';
+    }
+    
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+    
+    /* Contact Section */
+    .contact {
+      padding: 100px 0;
+      background-color: white;
+    }
+    
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+    }
+    
+    .contact-info h3 {
+      margin-bottom: 20px;
+    }
+    
+    .contact-method {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    .contact-icon {
+      width: 50px;
+      height: 50px;
+      background-color: var(--light-color);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+      color: var(--secondary-color);
+      font-size: 1.2rem;
+    }
+    
+    .contact-details h4 {
+      margin-bottom: 5px;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px 15px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-family: var(--font-main);
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+    }
+    
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: var(--secondary-color);
+      outline: none;
+    }
+    
+    .contact-form textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+    
+    /* Footer */
+    footer {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 60px 0 30px;
+    }
+    
+    .footer-container {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    
+    .footer-about h3,
+    .footer-links h3,
+    .footer-contact h3 {
+      color: white;
+      margin-bottom: 20px;
+      font-size: 1.3rem;
+    }
+    
+    .footer-links ul {
+      list-style: none;
+    }
+    
+    .footer-links li {
+      margin-bottom: 10px;
+    }
+    
+    .footer-links a {
+      color: #ccc;
+      transition: color 0.3s ease;
+    }
+    
+    .footer-links a:hover {
+      color: white;
+    }
+    
+    .footer-contact p {
+      margin-bottom: 10px;
+      color: #ccc;
+    }
+    
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 30px;
+      text-align: center;
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+    
+    .social-links {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    
+    .social-links a {
+      color: white;
+      background-color: rgba(255, 255, 255, 0.1);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s ease;
+    }
+    
+    .social-links a:hover {
+      background-color: var(--secondary-color);
+    }
+    
+    /* Responsive Styles */
+    @media (max-width: 992px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .process-steps {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+      }
+      
+      .process-step:nth-child(2):after {
+        display: none;
+      }
+      
+      .footer-container {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .header-container {
+        padding: 15px 0;
+      }
+      
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      .nav-links.active {
+        display: flex;
+      }
+      
+      .nav-links li {
+        margin: 10px 0;
+        margin-left: 0;
+      }
+      
+      .mobile-nav-toggle {
+        display: block;
+      }
+      
+      .about-grid,
+      .contact-grid,
+      .testimonials-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      
+      .hero p {
+        font-size: 1.1rem;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .process-steps {
+        grid-template-columns: 1fr;
+      }
+      
+      .process-step:after {
+        display: none;
+      }
+      
+      .footer-container {
+        grid-template-columns: 1fr;
+      }
+      
+      h1 {
+        font-size: 2rem;
+      }
+      
+      h2 {
+        font-size: 1.7rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <a href="#" class="logo-text">Jenny B. <span>Talbert</span></a>
+      </div>
+      <button class="mobile-nav-toggle">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Probate & Estate Law Attorney</h1>
+      <p>Helping Oregon families navigate complex legal matters with compassion and expertise for over 15 years.</p>
+      <a href="#contact" class="btn">Schedule a Consultation</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="/api/placeholder/600/800" alt="Jenny B. Talbert, Attorney at Law">
+        </div>
+        <div class="about-content">
+          <h2>About Jenny B. Talbert</h2>
+          <p>With over 15 years of experience in probate and estate law, I provide compassionate and comprehensive legal services to clients throughout Oregon.</p>
+          <p>I understand that dealing with probate and estate matters often comes during difficult times in your life. My approach combines thorough legal knowledge with genuine empathy to help you navigate these complex processes with confidence.</p>
+          <p>My practice focuses exclusively on probate administration, estate planning, trust administration, and related matters. This specialization allows me to provide expert guidance in these specific areas of law.</p>
+          <p>I'm committed to providing personalized attention to each client, ensuring your needs are met with care and professionalism.</p>
+          <a href="#contact" class="btn btn-outlined">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Legal Services</h2>
+        <p>Comprehensive probate and estate law services tailored to your needs</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">&#9878;</div>
+          <h3 class="service-title">Probate Administration</h3>
+          <p>Guiding executors and administrators through the entire probate process from filing the initial petition to the final distribution of assets.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#128196;</div>
+          <h3 class="service-title">Estate Planning</h3>
+          <p>Creating comprehensive estate plans including wills, trusts, powers of attorney, and advance healthcare directives.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#128200;</div>
+          <h3 class="service-title">Trust Administration</h3>
+          <p>Assisting trustees in fulfilling their fiduciary duties and navigating the complexities of trust administration.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#128172;</div>
+          <h3 class="service-title">Estate Litigation</h3>
+          <p>Representing clients in will contests, trust disputes, fiduciary litigation, and other estate-related conflicts.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#128188;</div>
+          <h3 class="service-title">Business Succession</h3>
+          <p>Developing strategies for transferring business ownership and assets to the next generation or other successors.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#127968;</div>
+          <h3 class="service-title">Elder Law</h3>
+          <p>Addressing legal issues affecting older adults, including guardianships, conservatorships, and long-term care planning.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section id="process" class="process">
+    <div class="container">
+      <div class="section-title">
+        <h2>My Process</h2>
+        <p>A systematic approach to handling your legal matters</p>
+      </div>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-number">1</div>
+          <h3>Initial Consultation</h3>
+          <p>We'll discuss your situation, goals, and concerns to determine the best path forward.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">2</div>
+          <h3>Strategy Development</h3>
+          <p>I'll create a tailored legal strategy aligned with your specific needs and objectives.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">3</div>
+          <h3>Implementation</h3>
+          <p>We'll execute the agreed-upon plan, handling all necessary documentation and filings.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">4</div>
+          <h3>Ongoing Support</h3>
+          <p>I'll provide continued guidance and assistance throughout the entire process.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <div class="section-title">
+        <h2>Client Testimonials</h2>
+        <p>What my clients say about my services</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p class="testimonial-text">"Jenny guided our family through the probate process after my father's passing with exceptional professionalism and compassion. Her knowledge and attention to detail made a difficult time much easier for us."</p>
+          <p class="testimonial-author">Sarah M. <span>- Portland, OR</span></p>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">"I was overwhelmed by the complex estate planning process until I met Jenny. She explained everything clearly and created a comprehensive plan that gives me peace of mind about my family's future."</p>
+          <p class="testimonial-author">Robert J. <span>- Eugene, OR</span></p>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">"Jenny's expertise in trust administration was invaluable. She helped me navigate my responsibilities as a trustee with confidence and ensured all legal requirements were properly fulfilled."</p>
+          <p class="testimonial-author">Michael T. <span>- Salem, OR</span></p>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">"Working with Jenny on our estate plan was a wonderful experience. She took the time to understand our unique situation and crafted solutions that perfectly addressed our needs."</p>
+          <p class="testimonial-author">Lisa and David K. <span>- Bend, OR</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="faq">
+    <div class="container">
+      <div class="section-title">
+        <h2>Frequently Asked Questions</h2>
+        <p>Answers to common questions about probate and estate matters</p>
+      </div>
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">What is probate and why is it necessary?</div>
+          <div class="faq-answer">
+            <p>Probate is the legal process of administering a deceased person's estate, which involves validating their will, identifying and inventorying their property, paying debts and taxes, and distributing the remaining assets to beneficiaries. It's necessary to ensure that assets are properly transferred according to the deceased's wishes and that all legal obligations are met.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">How long does the probate process take in Oregon?</div>
+          <div class="faq-answer">
+            <p>The duration of probate in Oregon typically ranges from 6 to 12 months for straightforward estates. However, complex estates, disputes among beneficiaries, or other complications can extend the process to 18 months or longer. Each case is unique, and I can provide a more specific timeline after evaluating your particular situation.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Can probate be avoided?</div>
+          <div class="faq-answer">
+            <p>Yes, there are several strategies to avoid probate, including creating a living trust, setting up payable-on-death accounts, holding property in joint tenancy, and making gifts during your lifetime. However, whether these strategies are appropriate depends on your specific circumstances and goals. I can help you determine the best approach for your situation.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">What's the difference between a will and a trust?</div>
+          <div class="faq-answer">
+            <p>A will is a legal document that specifies how you want your assets distributed after your death and goes through probate. A trust is a legal arrangement where a trustee holds and manages assets for beneficiaries, and it can take effect during your lifetime or after death. Unlike wills, trusts generally avoid probate, offer greater privacy, and can provide more control over asset distribution.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">What happens if someone dies without a will in Oregon?</div>
+          <div class="faq-answer">
+            <p>When someone dies without a will in Oregon (intestate), state law determines how their assets are distributed. Typically, assets go to the surviving spouse and children according to a formula established by state law. If there is no spouse or children, assets go to other relatives in a specific order. The court will appoint an administrator to handle the estate, which still goes through probate.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact Me</h2>
+        <p>Get in touch to schedule a consultation</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <div class="contact-method">
+            <div class="contact-icon">&#9742;</div>
+            <div class="contact-details">
+              <h4>Phone</h4>
+              <p>(503) 555-1234</p>
+            </div>
+          </div>
+          <div class="contact-method">
+            <div class="contact-icon">&#9993;</div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <p>jenny@talbertlaw.com</p>
+            </div>
+          </div>
+          <div class="contact-method">
+            <div class="contact-icon">&#127968;</div>
+            <div class="contact-details">
+              <h4>Office</h4>
+              <p>123 Legal Avenue, Suite 400<br>Portland, OR 97201</p>
+            </div>
+          </div>
+          <div class="contact-method">
+            <div class="contact-icon">&#128197;</div>
+            <div class="contact-details">
+              <h4>Office Hours</h4>
+              <p>Monday - Friday: 9:00 AM - 5:00 PM<br>Weekends: By appointment only</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <h3>Send a Message</h3>
+          <form id="contactForm" action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="tel" name="phone" placeholder="Your Phone (Optional)">
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-about">
+          <h3>Jenny B. Talbert</h3>
+          <p>Providing expert legal services in probate and estate law across Oregon. I'm dedicated to helping individuals and families navigate complex legal matters with compassion and professionalism.</p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Info</h3>
+          <p>123 Legal Avenue, Suite 400</p>
+          <p>Portland, OR 97201</p>
+          <p>Phone: (503) 555-1234</p>
+          <p>Email: jenny@talbertlaw.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Jenny B. Talbert, Attorney at Law. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" aria-label="LinkedIn"><i>in</i></a>
+          <a href="#" aria-label="Facebook"><i>f</i></a>
+          <a href="#" aria-label="Twitter"><i>X</i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Mobile Navigation Toggle
+    const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    mobileNavToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+    
+    // Smooth Scrolling for Navigation Links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 100,
+            behavior: 'smooth'
+          });
+          
+          // Close mobile menu if open
+          navLinks.classList.remove('active');
+        }
+      });
+    });
+    
+    // FAQ Accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      
+      question.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        
+        // Close all items
+        faqItems.forEach(faqItem => {
+          faqItem.classList.remove('active');
+        });
+        
+        // If the clicked item wasn't active, open it
+        if (!isActive) {
+          item.classList.add('active');
+        }
+      });
+    });
+    
+    // Form Submission
+    const contactForm = document.getElementById('contactForm');
+    
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Here you would typically send the form data to a server
+      // For demonstration purposes, we'll just show a success message
+      const formData = new FormData(contactForm);
+      let formValues = {};
+      
+      formData.forEach((value, key) => {
+        formValues[key] = value;
+      });
+      
+      // Console log the form values (for testing)
+      console.log(formValues);
+      
+      // Show success message
+      contactForm.innerHTML = '<div class="text-center"><h3>Thank You!</h3><p>Your message has been sent successfully. I will get back to you shortly.</p></div>';
+    });
+    
+    // Sticky Header on Scroll
+    window.addEventListener('scroll', () => {
+      const header = document.querySelector('header');
+      
+      if (window.scrollY > 100) {
+        header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
+      } else {
+        header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+      }
+    });
+  </script>
+</body>
+</html>
